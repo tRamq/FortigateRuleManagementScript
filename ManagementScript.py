@@ -3,7 +3,7 @@ import FortigateApi #this api library not belong to me but i changed a little bi
 import argparse
 import sys
 
-fg = FortigateApi.Fortigate('192.168.140.128', 'root', 'admin', 'ankara') #(firewall ip , virtual domain name, username,password)
+fg = FortigateApi.Fortigate('192.168.140.128', 'root', 'admin', 'password') #(firewall ip , virtual domain name, username,password)
 
 class Manage(object):
 
