@@ -1,0 +1,46 @@
+kali@kali:~/Downloads/FortigateApi-master (2)$ python3 deneme.py create any port7 all all
+login status: 200
+
+kali@kali:~/Downloads/FortigateApi-master (2)$ python3 deneme.py read 6
+
+login status: 200
+----text {
+  "http_method":"GET",
+  "revision":"8eaa52caab4fcc1dd5a04473b6f40b13",
+  "results":[
+    {
+      "policyid":6,
+      "q_origin_key":6,
+      "status":"enable",
+      "name":"",
+      "uuid":"d0aaf488-40f2-51eb-7839-21257722f054",
+      "srcintf":[
+        {
+          "name":"any",
+          "q_origin_key":"any"
+        }
+      ],
+      "dstintf":[
+        {
+          "name":"port7",
+          "q_origin_key":"port7"
+        }
+      ],
+      "srcaddr":[
+        {
+          "name":"all",
+          "q_origin_key":"all"
+        }
+      ],
+      "dstaddr":[
+        {
+          "name":"all",
+          "q_origin_key":"all"
+        }
+      ],
+      "srcaddr6":[
+      ],
+      "dstaddr6":[
+      ],
+      "internet-service":"disable",
+      "internet-service-name":[
