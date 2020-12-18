@@ -1,0 +1,37 @@
+python3 deneme.py read 5
+
+login status: 200
+----text {
+  "http_method":"GET",
+  "revision":"b17dd5e1c37d10c2793a0f3f32363bde",
+  "results":[
+    {
+      "policyid":5,
+      "q_origin_key":5,
+      "status":"enable",
+      "name":"",
+      "uuid":"7655cab8-40ec-51eb-b63e-5b837c1242c7",
+      "srcintf":[
+        {
+          "name":"any",
+          "q_origin_key":"any"
+        }
+      ],
+      "dstintf":[
+        {
+          "name":"any",
+          "q_origin_key":"any"
+        }
+      ],
+      "srcaddr":[
+        {
+          "name":"all",
+          "q_origin_key":"all"
+        }
+      ],
+      "dstaddr":[
+        {
+          "name":"all",
+          "q_origin_key":"all"
+        }
+      ],

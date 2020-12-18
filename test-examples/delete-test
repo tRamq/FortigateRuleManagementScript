@@ -1,0 +1,77 @@
+
+kali@kali:~/Downloads/FortigateApi-master (2)$ python3 deneme.py read 6
+
+login status: 200
+
+----text {
+  "http_method":"GET",
+  "revision":"99f06da7aaa1926bb099a54e4644e551",
+  "results":[
+    {
+      "policyid":6,
+      "q_origin_key":6,
+      "status":"enable",
+      "name":"",
+      "uuid":"7946ce92-40ed-51eb-9b54-9f82c0c7c3be",
+      "srcintf":[
+        {
+          "name":"port5",
+          "q_origin_key":"port5"
+        }
+      ],
+      "dstintf":[
+        {
+          "name":"any",
+          "q_origin_key":"any"
+        }
+      ],
+      "srcaddr":[
+        {
+          "name":"all",
+          "q_origin_key":"all"
+        }
+      ],
+      "dstaddr":[
+        {
+          "name":"all",
+          "q_origin_key":"all"
+        }
+      ],
+      "srcaddr6":[
+      ],
+      "dstaddr6":[
+      ],
+      "internet-service":"disable",
+      "internet-service-name":[
+
+  ],
+  "vdom":"root",
+  "path":"firewall",
+  "name":"policy",
+  "mkey":"6",
+  "status":"success",
+  "http_status":200,
+  "serial":"FGVMEVXB40ZMKA65",
+  "version":"v6.4.4",
+  "build":1803
+}
+
+kali@kali:~/Downloads/FortigateApi-master (2)$ python3 deneme.py delete 6
+login status: 200
+silme basarili
+
+kali@kali:~/Downloads/FortigateApi-master (2)$ python3 deneme.py read 6
+login status: 200
+----text {
+  "http_method":"GET",
+  "revision":"5cfaa6cf01fed85613dd7ed623868faf",
+  "status":"error",
+  "http_status":404,
+  "vdom":"root",
+  "path":"firewall",
+  "name":"policy",
+  "mkey":"6",
+  "serial":"FGVMEVXB40ZMKA65",
+  "version":"v6.4.4",
+  "build":1803
+}
